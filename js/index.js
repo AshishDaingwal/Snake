@@ -8,7 +8,7 @@ function isNumeric(str) {
     if (typeof str != "string") return false;   
     return !isNaN(str) && !isNaN(parseFloat(str)); 
 }
-let speed = prompt("Please Enter Snake Speed");
+let speed = 5;
 while(speed==='0' || speed===null || speed=="" || !isNumeric(speed)){
     alert("You did not enter Correct")
     speed=prompt("Please Enter Snake Speed");
