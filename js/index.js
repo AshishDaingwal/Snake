@@ -9,10 +9,6 @@ function isNumeric(str) {
     return !isNaN(str) && !isNaN(parseFloat(str)); 
 }
 let speed = 5;
-while(speed==='0' || speed===null || speed=="" || !isNumeric(speed)){
-    alert("You did not enter Correct")
-    speed=prompt("Please Enter Snake Speed");
-}
 
 let score = 0;
 let lastPaintTime = 0;
